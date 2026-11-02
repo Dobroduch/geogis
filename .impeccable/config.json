@@ -44,6 +44,78 @@
         ],
         "createdAt": "2026-10-28T00:15:56.433Z",
         "reason": "Same confirmed false positive as index.html's hero/process sections: .page-banner padding lives on the nested .container (padding-block 56px + padding-inline 24px), not flush against the section box as the detector checks at one DOM level"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "cabinet grotesk",
+        "files": [
+          "redesign/index.html"
+        ],
+        "createdAt": "2026-11-02T17:50:54.903Z",
+        "reason": "Mierka alternate-design exploration (redesign/ folder) intentionally uses a different font system than the live DESIGN.md; documented in ~/.claude/skills/geogis-design"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "ibm plex mono",
+        "files": [
+          "redesign/index.html"
+        ],
+        "createdAt": "2026-11-02T17:50:55.282Z",
+        "reason": "Mierka alternate-design exploration (redesign/ folder) intentionally uses a different font system than the live DESIGN.md; documented in ~/.claude/skills/geogis-design"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "cabinet grotesk",
+        "files": [
+          "redesign/kontakt.html"
+        ],
+        "createdAt": "2026-11-02T17:50:55.756Z",
+        "reason": "Mierka alternate-design exploration (redesign/ folder) intentionally uses a different font system than the live DESIGN.md; documented in ~/.claude/skills/geogis-design"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "ibm plex mono",
+        "files": [
+          "redesign/kontakt.html"
+        ],
+        "createdAt": "2026-11-02T17:50:56.182Z",
+        "reason": "Mierka alternate-design exploration (redesign/ folder) intentionally uses a different font system than the live DESIGN.md; documented in ~/.claude/skills/geogis-design"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "cabinet grotesk",
+        "files": [
+          "redesign/galeria.html"
+        ],
+        "createdAt": "2026-11-02T17:50:56.664Z",
+        "reason": "Mierka alternate-design exploration (redesign/ folder) intentionally uses a different font system than the live DESIGN.md; documented in ~/.claude/skills/geogis-design"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "ibm plex mono",
+        "files": [
+          "redesign/galeria.html"
+        ],
+        "createdAt": "2026-11-02T17:50:57.153Z",
+        "reason": "Mierka alternate-design exploration (redesign/ folder) intentionally uses a different font system than the live DESIGN.md; documented in ~/.claude/skills/geogis-design"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "cabinet grotesk",
+        "files": [
+          "redesign/css/style.css"
+        ],
+        "createdAt": "2026-11-02T17:50:57.709Z",
+        "reason": "Mierka alternate-design exploration (redesign/ folder) intentionally uses a different font system than the live DESIGN.md; documented in ~/.claude/skills/geogis-design"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "ibm plex mono",
+        "files": [
+          "redesign/css/style.css"
+        ],
+        "createdAt": "2026-11-02T17:50:58.148Z",
+        "reason": "Mierka alternate-design exploration (redesign/ folder) intentionally uses a different font system than the live DESIGN.md; documented in ~/.claude/skills/geogis-design"
       }
     ]
   }
