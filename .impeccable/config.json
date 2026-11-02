@@ -188,6 +188,78 @@
         ],
         "createdAt": "2026-11-02T18:08:18.738Z",
         "reason": "Mierka/Night (blueprint) alternate-design exploration intentionally uses a different font system than the live DESIGN.md"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "cabinet grotesk",
+        "files": [
+          "redesign-blueprint-light/index.html"
+        ],
+        "createdAt": "2026-11-02T18:13:48.946Z",
+        "reason": "Mierka/Blueprint Light alternate-design exploration intentionally uses a different font system than the live DESIGN.md"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "ibm plex mono",
+        "files": [
+          "redesign-blueprint-light/index.html"
+        ],
+        "createdAt": "2026-11-02T18:13:49.767Z",
+        "reason": "Mierka/Blueprint Light alternate-design exploration intentionally uses a different font system than the live DESIGN.md"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "cabinet grotesk",
+        "files": [
+          "redesign-blueprint-light/kontakt.html"
+        ],
+        "createdAt": "2026-11-02T18:13:50.405Z",
+        "reason": "Mierka/Blueprint Light alternate-design exploration intentionally uses a different font system than the live DESIGN.md"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "ibm plex mono",
+        "files": [
+          "redesign-blueprint-light/kontakt.html"
+        ],
+        "createdAt": "2026-11-02T18:13:50.953Z",
+        "reason": "Mierka/Blueprint Light alternate-design exploration intentionally uses a different font system than the live DESIGN.md"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "cabinet grotesk",
+        "files": [
+          "redesign-blueprint-light/galeria.html"
+        ],
+        "createdAt": "2026-11-02T18:13:51.522Z",
+        "reason": "Mierka/Blueprint Light alternate-design exploration intentionally uses a different font system than the live DESIGN.md"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "ibm plex mono",
+        "files": [
+          "redesign-blueprint-light/galeria.html"
+        ],
+        "createdAt": "2026-11-02T18:13:52.077Z",
+        "reason": "Mierka/Blueprint Light alternate-design exploration intentionally uses a different font system than the live DESIGN.md"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "cabinet grotesk",
+        "files": [
+          "redesign-blueprint-light/css/style.css"
+        ],
+        "createdAt": "2026-11-02T18:13:52.680Z",
+        "reason": "Mierka/Blueprint Light alternate-design exploration intentionally uses a different font system than the live DESIGN.md"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "ibm plex mono",
+        "files": [
+          "redesign-blueprint-light/css/style.css"
+        ],
+        "createdAt": "2026-11-02T18:13:53.201Z",
+        "reason": "Mierka/Blueprint Light alternate-design exploration intentionally uses a different font system than the live DESIGN.md"
       }
     ]
   }
