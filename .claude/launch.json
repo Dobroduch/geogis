@@ -1,0 +1,26 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "geogis-static",
+      "runtimeExecutable": "powershell.exe",
+      "runtimeArgs": [
+        "-NoProfile",
+        "-ExecutionPolicy", "Bypass",
+        "-File", ".claude\\dev-server.ps1",
+        "-Port", "5501"
+      ],
+      "port": 5501
+    },
+    {
+      "name": "geogis-php",
+      "runtimeExecutable": "C:\\Users\\neema\\AppData\\Local\\Microsoft\\WinGet\\Packages\\PHP.PHP.NTS.8.5_Microsoft.Winget.Source_8wekyb3d8bbwe\\php.exe",
+      "runtimeArgs": [
+        "-c", ".claude\\php-local.ini",
+        "-S", "localhost:5504",
+        "-t", "."
+      ],
+      "port": 5504
+    }
+  ]
+}

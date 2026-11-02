@@ -1,0 +1,50 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-27T19:41:18.285Z",
+        "reason": "False positive: verified via computed box model that .hero/.process padding lives on the nested .container (padding-inline 24px) plus the section's own padding-block (76-96px), not flush against the section box as the detector checks at one DOM level; real text has 76-96px/24px+ inset everywhere, confirmed visually all session"
+      },
+      {
+        "rule": "overused-font",
+        "value": "inter",
+        "createdAt": "2026-10-27T19:41:23.967Z",
+        "reason": "Established project typography documented in DESIGN.md (Inter for all body text, paired deliberately with Poppins for structural elements); not a defect, this session's polish pass was scoped to contrast/a11y per the user's audit, not a typeface change"
+      },
+      {
+        "rule": "broken-image",
+        "value": "*",
+        "files": [
+          "galeria.html"
+        ],
+        "createdAt": "2026-10-28T00:14:03.516Z",
+        "reason": "Confirmed false positive: <img id=lightbox-image src=\"\"> is intentionally empty until JS populates it on thumbnail click (verified by Assessment B during the earlier design critique); the lightbox stays hidden until then so nothing ever renders broken"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "kontakt.html"
+        ],
+        "createdAt": "2026-10-28T00:15:55.512Z",
+        "reason": "Same confirmed false positive as index.html's hero/process sections: .page-banner padding lives on the nested .container (padding-block 56px + padding-inline 24px), not flush against the section box as the detector checks at one DOM level"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "galeria.html"
+        ],
+        "createdAt": "2026-10-28T00:15:56.433Z",
+        "reason": "Same confirmed false positive as index.html's hero/process sections: .page-banner padding lives on the nested .container (padding-block 56px + padding-inline 24px), not flush against the section box as the detector checks at one DOM level"
+      }
+    ]
+  }
+}

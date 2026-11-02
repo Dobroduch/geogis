@@ -1,0 +1,14 @@
+# ---- GEOGIS SK — basic hardening (Apache) ---------------------------
+
+# Don't let visitors browse folder contents.
+Options -Indexes
+
+# Security headers.
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# Local dev tooling — never needed on the live site.
+RedirectMatch 404 ^/\.claude/

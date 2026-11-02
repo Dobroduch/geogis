@@ -1,0 +1,6 @@
+# Block direct access to local dev tooling that doesn't belong on the
+# live site — only files under /assets/ are actually used by the pages.
+# (.htaccess does the same thing for Apache hosts; Netlify ignores
+# .htaccess, so this is the equivalent for Netlify.)
+/.claude/*      /  404
+/data/*         /  404

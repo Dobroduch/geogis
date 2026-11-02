@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-27T00:00:00Z",
+  "title": "Design System: GEOGIS SK",
+  "extensions": {
+    "colorMeta": {
+      "primary": {
+        "role": "primary",
+        "displayName": "Surveyor's Marking Orange",
+        "canonical": "#f2994a",
+        "tonalRamp": ["#4a2a0f", "#7a3f12", "#a85618", "#d97f2f", "#f2994a", "#f6b374", "#fad29e", "#fdeee0"]
+      },
+      "primary-deep": {
+        "role": "primary",
+        "displayName": "Marking Orange, Deep",
+        "canonical": "#d97f2f"
+      },
+      "primary-ember": {
+        "role": "primary",
+        "displayName": "Marking Orange, Ember",
+        "canonical": "#9c5016"
+      },
+      "primary-tint": {
+        "role": "primary",
+        "displayName": "Marking Orange, Tint",
+        "canonical": "#fdeee0"
+      },
+      "neutral-ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#20242a",
+        "tonalRamp": ["#14171b", "#20242a", "#363b42", "#5c6269", "#868c92", "#c3c6c9", "#e6e4e1", "#f6f5f3"]
+      },
+      "neutral-ink-muted": { "role": "neutral", "displayName": "Ink, Muted", "canonical": "#5c6269" },
+      "neutral-ink-soft": { "role": "neutral", "displayName": "Ink, Soft", "canonical": "#868c92" },
+      "neutral-bg": { "role": "neutral", "displayName": "Paper White", "canonical": "#ffffff" },
+      "neutral-bg-warm": { "role": "neutral", "displayName": "Warm Putty", "canonical": "#eceae7" },
+      "neutral-bg-soft": { "role": "neutral", "displayName": "Soft Linen", "canonical": "#f6f5f3" },
+      "neutral-border": { "role": "neutral", "displayName": "Hairline Border", "canonical": "#e6e4e1" },
+      "dark-surface": { "role": "neutral", "displayName": "Near-Navy", "canonical": "#1c2430" },
+      "dark-text": { "role": "neutral", "displayName": "Dark Text", "canonical": "#aeb6c2" },
+      "dark-text-soft": { "role": "neutral", "displayName": "Dark Text, Soft", "canonical": "#949ca9" }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Homepage hero H1 only." },
+      "headline": { "displayName": "Headline", "purpose": "Subpage H1s and major section headings." },
+      "title": { "displayName": "Title", "purpose": "Card and panel headings." },
+      "body": { "displayName": "Body", "purpose": "All reading copy." },
+      "label": { "displayName": "Label", "purpose": "Badges, pills, icon captions, step numbers." }
+    },
+    "shadows": [
+      { "name": "card-lift", "value": "0 10px 30px rgba(28, 36, 48, 0.08)", "purpose": "The system's one formal elevation token: cards, gallery items, the contact form panel." },
+      { "name": "badge-lift", "value": "0 14px 30px rgba(28, 36, 48, 0.12)", "purpose": "Trust-badge pills floating over photography or the dark footer." },
+      { "name": "overlay-lift", "value": "0 20px 60px rgba(0, 0, 0, 0.5)", "purpose": "The lightbox's enlarged image against its dark backdrop." },
+      { "name": "button-primary", "value": "0 10px 22px rgba(242, 153, 74, 0.35)", "purpose": "Primary button's accent-tinted shadow at rest." },
+      { "name": "button-primary-hover", "value": "0 12px 26px rgba(217, 127, 47, 0.4)", "purpose": "Primary button's shadow on hover/focus." }
+    ],
+    "motion": [
+      { "name": "ease-fast", "value": "0.2s ease", "purpose": "Button and link hover/focus transitions." },
+      { "name": "ease-medium", "value": "0.35s cubic-bezier(0.22, 0.61, 0.36, 1)", "purpose": "Icon-wrap hover lift, nav underline, card heading rule width, service-icon background." },
+      { "name": "reveal", "value": "0.6s ease (opacity), 0.6s cubic-bezier(0.22, 0.61, 0.36, 1) (transform)", "purpose": "Scroll-triggered reveal: fade + translateY(24px)->none, once per element." },
+      { "name": "reveal-stagger-quick", "value": "0.08s / 0.16s / 0.24s", "purpose": "Default stagger delay for grouped reveals (icons, cards, badges)." },
+      { "name": "reveal-stagger-process", "value": "0.4s / 0.8s / 1.2s", "purpose": "Slower, sequential stagger scoped to the process timeline — step 1 is static, 2-4 build in one at a time." },
+      { "name": "media-zoom", "value": "0.7s cubic-bezier(0.22, 0.61, 0.36, 1)", "purpose": "Card and gallery image hover zoom to scale(1.08)." },
+      { "name": "hamburger-morph", "value": "0.32s cubic-bezier(0.65, 0, 0.35, 1) (bars), 0.2s ease (opacity)", "purpose": "Mobile nav icon morphing from hamburger to X." }
+    ],
+    "breakpoints": [
+      { "name": "tablet", "value": "980px" },
+      { "name": "mobile", "value": "760px" },
+      { "name": "small-mobile", "value": "480px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Main call-to-action button; fully rounded, orange fill, lifts slightly on hover.",
+      "html": "<button class=\"ds-btn-primary\">Kontaktujte nás</button>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 15px 34px; border-radius: 999px; font-family: 'Poppins', 'Segoe UI', Arial, sans-serif; font-weight: 600; font-size: 0.98rem; border: none; cursor: pointer; background: #f2994a; color: #1c2430; box-shadow: 0 10px 22px rgba(242, 153, 74, 0.35); transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease; } .ds-btn-primary:hover { background: #d97f2f; box-shadow: 0 12px 26px rgba(217, 127, 47, 0.4); transform: translateY(-1px); } .ds-btn-primary:focus-visible { outline: 2px solid #1c2430; outline-offset: 3px; }"
+    },
+    {
+      "name": "Service Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Media-topped content card; heading underline widens on hover, media zooms slightly.",
+      "html": "<article class=\"ds-card\"><div class=\"ds-card-media\"></div><div class=\"ds-card-body\"><h3 class=\"ds-card-title\">Geodetické služby</h3><p class=\"ds-card-text\">geometrické plány, vytyčovanie pozemkov a stavieb</p></div></article>",
+      "css": ".ds-card { background: #ffffff; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(28, 36, 48, 0.08); border: 1px solid #e6e4e1; } .ds-card-media { aspect-ratio: 16 / 10; background: #f6f5f3; } .ds-card-body { padding: 28px 26px 32px; } .ds-card-title { font-family: 'Poppins', 'Segoe UI', Arial, sans-serif; font-size: 1.2rem; font-weight: 700; color: #20242a; position: relative; padding-bottom: 14px; margin: 0 0 12px; } .ds-card-title::after { content: ''; position: absolute; left: 0; bottom: 0; height: 3px; width: 36px; background: #f2994a; border-radius: 3px; transition: width 0.35s cubic-bezier(0.22,0.61,0.36,1); } .ds-card:hover .ds-card-title::after { width: 72px; } .ds-card-text { margin: 0; color: #5c6269; font-size: 0.96rem; line-height: 1.7; }"
+    },
+    {
+      "name": "Trust Badge Pill",
+      "kind": "chip",
+      "refersTo": "badge-pill",
+      "description": "Floating white pill with a small tinted icon circle and bold label; used for credibility stats.",
+      "html": "<div class=\"ds-badge-pill\"><span class=\"ds-badge-icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#9c5016\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" width=\"13\" height=\"13\"><path d=\"M12 2 4 5v6c0 5 3.5 9.5 8 11 4.5-1.5 8-6 8-11V5z\"/><path d=\"m9 12 2 2 4-4\"/></svg></span><span>Autorizovaný geodet a kartograf</span></div>",
+      "css": ".ds-badge-pill { display: inline-flex; align-items: center; gap: 8px; background: #ffffff; border-radius: 14px; padding: 6px 14px 6px 6px; box-shadow: 0 14px 30px rgba(28, 36, 48, 0.12); border: 1px solid #e6e4e1; font-family: 'Poppins', 'Segoe UI', Arial, sans-serif; font-weight: 600; font-size: 0.82rem; color: #20242a; } .ds-badge-icon { width: 26px; height: 26px; border-radius: 50%; background: #fdeee0; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": null,
+      "description": "Labeled form input; soft-linen fill at rest, turns white with an orange border on focus.",
+      "html": "<label class=\"ds-field\"><span class=\"ds-field-label\">Email</span><input class=\"ds-field-input\" type=\"email\"></label>",
+      "css": ".ds-field { display: block; } .ds-field-label { display: block; font-family: 'Inter', 'Segoe UI', Arial, sans-serif; font-weight: 600; font-size: 0.92rem; margin-bottom: 8px; color: #20242a; } .ds-field-input { width: 100%; padding: 13px 16px; border: 1.5px solid #e6e4e1; border-radius: 10px; font-family: 'Inter', 'Segoe UI', Arial, sans-serif; font-size: 0.98rem; color: #20242a; background: #f6f5f3; transition: border-color 0.2s ease, background-color 0.2s ease; } .ds-field-input:hover { border-color: #d5d2cc; } .ds-field-input:focus { outline: none; border-color: #f2994a; background: #ffffff; }"
+    },
+    {
+      "name": "Process Step",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "Signature numbered timeline step: tinted circle numeral, title, short description, builds in on a slow sequential reveal.",
+      "html": "<div class=\"ds-process-step\"><span class=\"ds-process-number\">01</span><h3 class=\"ds-process-title\">Dopyt</h3><p class=\"ds-process-text\">Kontaktujte nás telefonicky, e-mailom alebo cez formulár.</p></div>",
+      "css": ".ds-process-step { position: relative; text-align: center; } .ds-process-number { display: inline-flex; align-items: center; justify-content: center; width: 56px; height: 56px; border-radius: 50%; background: #fdeee0; color: #9c5016; font-family: 'Poppins', 'Segoe UI', Arial, sans-serif; font-weight: 700; font-size: 1.1rem; margin-bottom: 20px; } .ds-process-title { font-family: 'Poppins', 'Segoe UI', Arial, sans-serif; font-size: 1.05rem; font-weight: 700; margin: 0 0 10px; color: #20242a; } .ds-process-text { margin: 0; color: #5c6269; font-size: 0.92rem; line-height: 1.7; }"
+    },
+    {
+      "name": "Lightbox Control",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "Circular glass-style control used for the lightbox's close/prev/next buttons over its dark overlay.",
+      "html": "<div class=\"ds-lightbox-demo\"><button class=\"ds-lightbox-btn\" aria-label=\"Zavrieť\">&times;</button></div>",
+      "css": ".ds-lightbox-demo { background: rgba(10, 12, 16, 0.92); padding: 24px; border-radius: 12px; display: inline-flex; } .ds-lightbox-btn { width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: rgba(255, 255, 255, 0.1); color: #fff; border: none; font-size: 1.6rem; line-height: 1; cursor: pointer; transition: background-color 0.2s ease; } .ds-lightbox-btn:hover { background: rgba(255, 255, 255, 0.22); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Trusted Local Surveyor",
+    "overview": "GEOGIS SK reads as a known, established local firm — the kind of business whose office you'd walk into with property documents under your arm and leave reassured. The system is warm, calm, and unflashy: soft off-white and putty-toned neutrals carry almost everything, dark near-navy grounds the footer, and a single surveyor's-marking orange is spent carefully — on calls to action, hover states, and small circular icon badges — so that when it appears, it reads as a deliberate signal rather than decoration. Nothing about the system wants to look like a startup or a government portal; it wants to look like thirty years in business.\n\nShapes lean soft and friendly: buttons and pill badges are fully rounded (999px), icon containers are perfect circles, cards and panels use a generous 20px radius. The one formal shadow in the system is a diffuse, low-contrast 'ambient lift' used sparingly on cards and the contact form — there is no heavy drop-shadow anywhere. Motion is restrained and purposeful: a single staggered reveal as sections enter view, a slow one-at-a-time build on the four-step process timeline, and small hover lifts on interactive media — never scattered or decorative.",
+    "keyCharacteristics": [
+      "One warm neutral palette, one confident accent spent sparingly",
+      "Fully rounded pills and circles over sharp corners",
+      "A single soft ambient shadow; otherwise flat",
+      "Slow, intentional motion — not a hover effect on every element",
+      "Poppins for anything structural (headings, labels, buttons); Inter for reading text"
+    ],
+    "rules": [
+      { "name": "The One Signal Rule", "body": "The accent orange is reserved for things the visitor can act on or that mark active state — buttons, hover, the active nav underline, process-step numbers. It never fills a large background area or decorates static content.", "section": "colors" },
+      { "name": "The No-Italic Rule", "body": "Emphasis is carried by weight and the accent color, never by italics or all-caps body copy — the only uppercase text in the system is the hero H1 and the office-label eyebrow pill, both load-bearing structural elements, not decoration.", "section": "typography" },
+      { "name": "The Flat-by-Default Rule", "body": "Surfaces are flat at rest. A shadow appears only where an element visually floats over something else (photography, a dark footer, an overlay) — never as decoration on an ordinary panel.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do keep the orange accent to interactive/active elements only (The One Signal Rule).",
+      "Do use fully rounded pills (999px) for anything button- or badge-shaped, and perfect circles for icon containers.",
+      "Do keep new shadows to the existing three-value vocabulary (Card Lift, Badge Lift, Overlay Lift) rather than inventing a new shadow per component.",
+      "Do use Poppins for anything structural (headings, labels, buttons, numbers) and Inter for reading text — never mix the two roles.",
+      "Do stage new scroll-triggered reveals through the existing .reveal / .reveal-dN system rather than one-off animations."
+    ],
+    "donts": [
+      "Don't introduce a second accent color — the system is built around spending exactly one confident color sparingly.",
+      "Don't add drop shadows to ordinary flat panels; reserve shadow for elements that genuinely float over something else.",
+      "Don't use italics or all-caps body copy for emphasis — weight and the accent color carry emphasis instead.",
+      "Don't add decorative, non-functional motion (hover effects on every card, scattered looping animations) — motion here is restrained and purposeful, not ambient."
+    ]
+  }
+}
