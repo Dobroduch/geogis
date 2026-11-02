@@ -116,6 +116,78 @@
         ],
         "createdAt": "2026-11-02T17:50:58.148Z",
         "reason": "Mierka alternate-design exploration (redesign/ folder) intentionally uses a different font system than the live DESIGN.md; documented in ~/.claude/skills/geogis-design"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "cabinet grotesk",
+        "files": [
+          "redesign-blueprint/index.html"
+        ],
+        "createdAt": "2026-11-02T18:08:16.059Z",
+        "reason": "Mierka/Night (blueprint) alternate-design exploration intentionally uses a different font system than the live DESIGN.md"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "ibm plex mono",
+        "files": [
+          "redesign-blueprint/index.html"
+        ],
+        "createdAt": "2026-11-02T18:08:16.420Z",
+        "reason": "Mierka/Night (blueprint) alternate-design exploration intentionally uses a different font system than the live DESIGN.md"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "cabinet grotesk",
+        "files": [
+          "redesign-blueprint/kontakt.html"
+        ],
+        "createdAt": "2026-11-02T18:08:16.845Z",
+        "reason": "Mierka/Night (blueprint) alternate-design exploration intentionally uses a different font system than the live DESIGN.md"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "ibm plex mono",
+        "files": [
+          "redesign-blueprint/kontakt.html"
+        ],
+        "createdAt": "2026-11-02T18:08:17.220Z",
+        "reason": "Mierka/Night (blueprint) alternate-design exploration intentionally uses a different font system than the live DESIGN.md"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "cabinet grotesk",
+        "files": [
+          "redesign-blueprint/galeria.html"
+        ],
+        "createdAt": "2026-11-02T18:08:17.595Z",
+        "reason": "Mierka/Night (blueprint) alternate-design exploration intentionally uses a different font system than the live DESIGN.md"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "ibm plex mono",
+        "files": [
+          "redesign-blueprint/galeria.html"
+        ],
+        "createdAt": "2026-11-02T18:08:18.002Z",
+        "reason": "Mierka/Night (blueprint) alternate-design exploration intentionally uses a different font system than the live DESIGN.md"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "cabinet grotesk",
+        "files": [
+          "redesign-blueprint/css/style.css"
+        ],
+        "createdAt": "2026-11-02T18:08:18.377Z",
+        "reason": "Mierka/Night (blueprint) alternate-design exploration intentionally uses a different font system than the live DESIGN.md"
+      },
+      {
+        "rule": "design-system-font",
+        "value": "ibm plex mono",
+        "files": [
+          "redesign-blueprint/css/style.css"
+        ],
+        "createdAt": "2026-11-02T18:08:18.738Z",
+        "reason": "Mierka/Night (blueprint) alternate-design exploration intentionally uses a different font system than the live DESIGN.md"
       }
     ]
   }
